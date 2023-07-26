@@ -116,9 +116,8 @@ service:
   port: 9097
 
 cluster:
-  name: cluster
-
-configmap: celeborn-conf
+  name: celeborn
+  suffixInResolvConf: cluster
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
